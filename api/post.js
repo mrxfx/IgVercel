@@ -1,7 +1,7 @@
 const igRequest = require('./helper.js');
 module.exports = (req, res) => {
   const url = req.query.url;
-  if (!url) return res.json({ error: 'Missing reel URL' });
+  if (!url) return res.json({ error: 'Missing post URL' });
 
   const parts = url.split("/");
   const id = parts[parts.length - 2];
